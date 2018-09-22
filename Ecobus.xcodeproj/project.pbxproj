@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27F8E0084ADE7C97CAD73F29 /* Pods_Ecobus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A261B2DFEF59248517D5D2C /* Pods_Ecobus.framework */; };
+		AC23225D2154ED7D00C91E5F /* VehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23225B2154ED7D00C91E5F /* VehicleTableViewCell.swift */; };
+		AC23225E2154ED7D00C91E5F /* VehicleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC23225C2154ED7D00C91E5F /* VehicleTableViewCell.xib */; };
+		AC2322602155433D00C91E5F /* TrackingVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23225F2155433D00C91E5F /* TrackingVehicleViewController.swift */; };
+		AC23226221554C0100C91E5F /* WebScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23226121554C0100C91E5F /* WebScreenViewController.swift */; };
+		AC421708214F8DE200490062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC421707214F8DE200490062 /* AppDelegate.swift */; };
+		AC42170D214F8DE200490062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC42170B214F8DE200490062 /* Main.storyboard */; };
+		AC42170F214F8DE300490062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC42170E214F8DE300490062 /* Assets.xcassets */; };
+		AC421712214F8DE300490062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC421710214F8DE300490062 /* LaunchScreen.storyboard */; };
+		AC42171C214F93D600490062 /* MapScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC42171B214F93D600490062 /* MapScreenViewController.swift */; };
+		AC42171E214F9B6B00490062 /* MapScreenViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC42171D214F9B6B00490062 /* MapScreenViewController+Extension.swift */; };
+		AC421722214F9E7800490062 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC421721214F9E7800490062 /* RequestManager.swift */; };
+		AC421724214FA0AE00490062 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC421723214FA0AE00490062 /* AppStorage.swift */; };
+		AC4217262150131700490062 /* SimpleStringEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4217252150131700490062 /* SimpleStringEncoding.swift */; };
+		AC7B43902150F72200A018BE /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7B438F2150F72200A018BE /* AppModel.swift */; };
+		AC7B43922150FA1F00A018BE /* TrackingVehicleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7B43912150FA1F00A018BE /* TrackingVehicleManager.swift */; };
+		AC7B43952151011800A018BE /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7B43942151011800A018BE /* AppSetting.swift */; };
+		AC7B43972151014B00A018BE /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7B43962151014B00A018BE /* AppConstant.swift */; };
+		ACAD7891215551D10045EA00 /* ECOBUSGIAIDOAN2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ACAD788F215551D10045EA00 /* ECOBUSGIAIDOAN2.pdf */; };
+		ACAD7892215551D10045EA00 /* ECOBUSGIAIDOAN1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ACAD7890215551D10045EA00 /* ECOBUSGIAIDOAN1.pdf */; };
+		ACC5D8FD21526AFE00526926 /* ListScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5D8FC21526AFE00526926 /* ListScreenViewController.swift */; };
+		ACC5D9252154904F00526926 /* DrawerMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5D9242154904F00526926 /* DrawerMapViewController.swift */; };
+		ACC9339B21509759005D711B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9339A21509759005D711B /* String+Extension.swift */; };
+		ACC9339E21509E31005D711B /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9339D21509E31005D711B /* Vehicle.swift */; };
+		ACFE5EDD2152225700309017 /* GMSMarker+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE5EDC2152225700309017 /* GMSMarker+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A261B2DFEF59248517D5D2C /* Pods_Ecobus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ecobus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D8D5F71B5F2A83DB74754A3 /* Pods-Ecobus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecobus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ecobus/Pods-Ecobus.release.xcconfig"; sourceTree = "<group>"; };
+		A17C15C1486FA8CF5EA681E9 /* Pods-Ecobus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecobus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ecobus/Pods-Ecobus.debug.xcconfig"; sourceTree = "<group>"; };
+		AC23225B2154ED7D00C91E5F /* VehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTableViewCell.swift; sourceTree = "<group>"; };
+		AC23225C2154ED7D00C91E5F /* VehicleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleTableViewCell.xib; sourceTree = "<group>"; };
+		AC23225F2155433D00C91E5F /* TrackingVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingVehicleViewController.swift; sourceTree = "<group>"; };
+		AC23226121554C0100C91E5F /* WebScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScreenViewController.swift; sourceTree = "<group>"; };
+		AC421704214F8DE200490062 /* Ecobus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecobus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC421707214F8DE200490062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC42170C214F8DE200490062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC42170E214F8DE300490062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC421711214F8DE300490062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC421713214F8DE300490062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC42171B214F93D600490062 /* MapScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenViewController.swift; sourceTree = "<group>"; };
+		AC42171D214F9B6B00490062 /* MapScreenViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapScreenViewController+Extension.swift"; sourceTree = "<group>"; };
+		AC421721214F9E7800490062 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		AC421723214FA0AE00490062 /* AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
+		AC4217252150131700490062 /* SimpleStringEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStringEncoding.swift; sourceTree = "<group>"; };
+		AC7B438F2150F72200A018BE /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		AC7B43912150FA1F00A018BE /* TrackingVehicleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingVehicleManager.swift; sourceTree = "<group>"; };
+		AC7B43942151011800A018BE /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
+		AC7B43962151014B00A018BE /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		ACAD788F215551D10045EA00 /* ECOBUSGIAIDOAN2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ECOBUSGIAIDOAN2.pdf; sourceTree = "<group>"; };
+		ACAD7890215551D10045EA00 /* ECOBUSGIAIDOAN1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ECOBUSGIAIDOAN1.pdf; sourceTree = "<group>"; };
+		ACC5D8FC21526AFE00526926 /* ListScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreenViewController.swift; sourceTree = "<group>"; };
+		ACC5D9242154904F00526926 /* DrawerMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerMapViewController.swift; sourceTree = "<group>"; };
+		ACC9339A21509759005D711B /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		ACC9339D21509E31005D711B /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		ACFE5EDC2152225700309017 /* GMSMarker+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GMSMarker+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC421701214F8DE200490062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F8E0084ADE7C97CAD73F29 /* Pods_Ecobus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17AD1CA6642962D3E1DE02C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A17C15C1486FA8CF5EA681E9 /* Pods-Ecobus.debug.xcconfig */,
+				6D8D5F71B5F2A83DB74754A3 /* Pods-Ecobus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A2E3457CCF4009F80E388A70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A261B2DFEF59248517D5D2C /* Pods_Ecobus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC4216FB214F8DE200490062 = {
+			isa = PBXGroup;
+			children = (
+				AC421706214F8DE200490062 /* Ecobus */,
+				AC421705214F8DE200490062 /* Products */,
+				17AD1CA6642962D3E1DE02C5 /* Pods */,
+				A2E3457CCF4009F80E388A70 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC421705214F8DE200490062 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC421704214F8DE200490062 /* Ecobus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC421706214F8DE200490062 /* Ecobus */ = {
+			isa = PBXGroup;
+			children = (
+				ACAD788E215551AB0045EA00 /* Resource */,
+				AC7B43932151010A00A018BE /* AppBase */,
+				ACC9339C21509E22005D711B /* Model */,
+				ACC933992150974A005D711B /* Utils */,
+				AC42171F214F9CFB00490062 /* Service */,
+				AC421719214F93B600490062 /* ViewController */,
+				AC421707214F8DE200490062 /* AppDelegate.swift */,
+				AC42170B214F8DE200490062 /* Main.storyboard */,
+				AC42170E214F8DE300490062 /* Assets.xcassets */,
+				AC421710214F8DE300490062 /* LaunchScreen.storyboard */,
+				AC421713214F8DE300490062 /* Info.plist */,
+			);
+			path = Ecobus;
+			sourceTree = "<group>";
+		};
+		AC421719214F93B600490062 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ACC5D9232154903700526926 /* DrawerMapViewController */,
+				ACC5D8FB21526AE300526926 /* ListScreen */,
+				AC42171A214F93BE00490062 /* MapScreen */,
+				AC23225F2155433D00C91E5F /* TrackingVehicleViewController.swift */,
+				AC23226121554C0100C91E5F /* WebScreenViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AC42171A214F93BE00490062 /* MapScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AC42171B214F93D600490062 /* MapScreenViewController.swift */,
+				AC42171D214F9B6B00490062 /* MapScreenViewController+Extension.swift */,
+			);
+			path = MapScreen;
+			sourceTree = "<group>";
+		};
+		AC42171F214F9CFB00490062 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AC421720214F9E6900490062 /* Request */,
+				AC421723214FA0AE00490062 /* AppStorage.swift */,
+				AC7B43912150FA1F00A018BE /* TrackingVehicleManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AC421720214F9E6900490062 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				AC421721214F9E7800490062 /* RequestManager.swift */,
+				AC4217252150131700490062 /* SimpleStringEncoding.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		AC7B43932151010A00A018BE /* AppBase */ = {
+			isa = PBXGroup;
+			children = (
+				AC7B43942151011800A018BE /* AppSetting.swift */,
+				AC7B43962151014B00A018BE /* AppConstant.swift */,
+			);
+			path = AppBase;
+			sourceTree = "<group>";
+		};
+		ACAD788E215551AB0045EA00 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				ACAD7890215551D10045EA00 /* ECOBUSGIAIDOAN1.pdf */,
+				ACAD788F215551D10045EA00 /* ECOBUSGIAIDOAN2.pdf */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		ACC5D8FB21526AE300526926 /* ListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				ACC5D8FC21526AFE00526926 /* ListScreenViewController.swift */,
+			);
+			path = ListScreen;
+			sourceTree = "<group>";
+		};
+		ACC5D9232154903700526926 /* DrawerMapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ACC5D9242154904F00526926 /* DrawerMapViewController.swift */,
+				AC23225B2154ED7D00C91E5F /* VehicleTableViewCell.swift */,
+				AC23225C2154ED7D00C91E5F /* VehicleTableViewCell.xib */,
+			);
+			path = DrawerMapViewController;
+			sourceTree = "<group>";
+		};
+		ACC933992150974A005D711B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ACC9339A21509759005D711B /* String+Extension.swift */,
+				ACFE5EDC2152225700309017 /* GMSMarker+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		ACC9339C21509E22005D711B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACC9339D21509E31005D711B /* Vehicle.swift */,
+				AC7B438F2150F72200A018BE /* AppModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC421703214F8DE200490062 /* Ecobus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC421716214F8DE300490062 /* Build configuration list for PBXNativeTarget "Ecobus" */;
+			buildPhases = (
+				BDEE4CC3E62FE0CA0B98F5ED /* [CP] Check Pods Manifest.lock */,
+				AC421700214F8DE200490062 /* Sources */,
+				AC421701214F8DE200490062 /* Frameworks */,
+				AC421702214F8DE200490062 /* Resources */,
+				92B3FA97BF490B737F013A11 /* [CP] Embed Pods Frameworks */,
+				8AA670DC14B88952A7FE546F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ecobus;
+			productName = Ecobus;
+			productReference = AC421704214F8DE200490062 /* Ecobus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC4216FC214F8DE200490062 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = asstudio;
+				TargetAttributes = {
+					AC421703214F8DE200490062 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = AC4216FF214F8DE200490062 /* Build configuration list for PBXProject "Ecobus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC4216FB214F8DE200490062;
+			productRefGroup = AC421705214F8DE200490062 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC421703214F8DE200490062 /* Ecobus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC421702214F8DE200490062 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC23225E2154ED7D00C91E5F /* VehicleTableViewCell.xib in Resources */,
+				AC421712214F8DE300490062 /* LaunchScreen.storyboard in Resources */,
+				AC42170F214F8DE300490062 /* Assets.xcassets in Resources */,
+				ACAD7891215551D10045EA00 /* ECOBUSGIAIDOAN2.pdf in Resources */,
+				AC42170D214F8DE200490062 /* Main.storyboard in Resources */,
+				ACAD7892215551D10045EA00 /* ECOBUSGIAIDOAN1.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8AA670DC14B88952A7FE546F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ecobus/Pods-Ecobus-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ecobus/Pods-Ecobus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92B3FA97BF490B737F013A11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ecobus/Pods-Ecobus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Pulley/Pulley.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyXMLParser/SwiftyXMLParser.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pulley.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyXMLParser.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ecobus/Pods-Ecobus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDEE4CC3E62FE0CA0B98F5ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ecobus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC421700214F8DE200490062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC7B43952151011800A018BE /* AppSetting.swift in Sources */,
+				ACFE5EDD2152225700309017 /* GMSMarker+Extension.swift in Sources */,
+				ACC5D8FD21526AFE00526926 /* ListScreenViewController.swift in Sources */,
+				ACC9339E21509E31005D711B /* Vehicle.swift in Sources */,
+				AC421708214F8DE200490062 /* AppDelegate.swift in Sources */,
+				AC23226221554C0100C91E5F /* WebScreenViewController.swift in Sources */,
+				AC7B43972151014B00A018BE /* AppConstant.swift in Sources */,
+				ACC9339B21509759005D711B /* String+Extension.swift in Sources */,
+				AC42171E214F9B6B00490062 /* MapScreenViewController+Extension.swift in Sources */,
+				AC23225D2154ED7D00C91E5F /* VehicleTableViewCell.swift in Sources */,
+				ACC5D9252154904F00526926 /* DrawerMapViewController.swift in Sources */,
+				AC7B43902150F72200A018BE /* AppModel.swift in Sources */,
+				AC2322602155433D00C91E5F /* TrackingVehicleViewController.swift in Sources */,
+				AC42171C214F93D600490062 /* MapScreenViewController.swift in Sources */,
+				AC4217262150131700490062 /* SimpleStringEncoding.swift in Sources */,
+				AC421722214F9E7800490062 /* RequestManager.swift in Sources */,
+				AC421724214FA0AE00490062 /* AppStorage.swift in Sources */,
+				AC7B43922150FA1F00A018BE /* TrackingVehicleManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC42170B214F8DE200490062 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC42170C214F8DE200490062 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC421710214F8DE300490062 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC421711214F8DE300490062 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC421714214F8DE300490062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC421715214F8DE300490062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC421717214F8DE300490062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A17C15C1486FA8CF5EA681E9 /* Pods-Ecobus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 556LZQ7WUH;
+				INFOPLIST_FILE = Ecobus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asstudio.Ecobus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC421718214F8DE300490062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D8D5F71B5F2A83DB74754A3 /* Pods-Ecobus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 556LZQ7WUH;
+				INFOPLIST_FILE = Ecobus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asstudio.Ecobus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC4216FF214F8DE200490062 /* Build configuration list for PBXProject "Ecobus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC421714214F8DE300490062 /* Debug */,
+				AC421715214F8DE300490062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC421716214F8DE300490062 /* Build configuration list for PBXNativeTarget "Ecobus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC421717214F8DE300490062 /* Debug */,
+				AC421718214F8DE300490062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC4216FC214F8DE200490062 /* Project object */;
+}
